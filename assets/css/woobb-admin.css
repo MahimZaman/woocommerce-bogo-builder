@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --woobb-danger: oklch(63.7% 0.237 25.331);
+  --woobb-danger-hover: oklch(57.7% 0.245 27.325);
+}
+
+.woobb_create_rule_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  font-family: "Inter";
+}
+
+.woobb_create_rule_header > span {
+  font-weight: 500;
+  color: black;
+}
+
+table#woobb_bogo_rules {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.woobb_rule_container {
+  padding: 20px;
+}
+
+.woobb-rule-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-family: "Inter";
+  line-height: 1.5;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 8px;
+}
+
+input.woobb_parent_product_qty {
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  height: auto !important;
+  font-size: 16px;
+  color: black;
+  line-height: 1.5;
+  padding: 6px !important;
+  width: 60px !important;
+}
+
+#woobb_bogo_rules tr td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+button[type="button"].button {
+  font-family: "Inter", sans-serif;
+}
+
+button[type="button"].woobb-danger-btn {
+  background: var(--woobb-danger);
+  border-color: var(--woobb-danger);
+  color: white;
+}
+
+button[type="button"].woobb-danger-btn:hover {
+  background: var(--woobb-danger-hover);
+  border-color: var(--woobb-danger-hover);
+  color: white;
+}
+
+.woobb-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: black;
+  line-height: 1.5;
+  margin-bottom: 6px;
+  display: block;
+  font-family: "Inter";
+}
+
+input.woobb-input {
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  height: auto !important;
+  font-size: 16px;
+  color: black;
+  line-height: 1.5;
+  padding: 6px !important;
+}
+
+input.woobb-input-number {
+  width: 60px !important;
+}
+
+select.free_product {
+  border: 1px solid #ddd !important;
+  height: auto !important;
+  font-family: "Inter";
+  font-size: 14px;
+  color: black !important;
+  line-height: 1.5 !important;
+  padding: 6px 10px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.free-products-list th {
+  font-family: "Inter";
+  padding: 6px 0;
+  line-height: 1.3;
+}
+
+.woobb_rule_table {
+  font-family: "Inter";
+  line-height: 1.5;
+  color: #000;
+}
+
+.woobb-white-loader {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+button.button.remove_parent_row {
+  margin-left: auto;
+}
